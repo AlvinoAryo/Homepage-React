@@ -1,5 +1,8 @@
 const HomePage = () => {
   const defaultColor = "text-rose-600";
+  const heroStyle = {
+    backgroundImage: "url(https://placeimg.com/1000/800/arch)",
+  };
   return (
     <div className="font-bold m-2 p-4">
       <div className="hero">
