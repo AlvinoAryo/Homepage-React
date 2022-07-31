@@ -8,11 +8,8 @@ const NavBar = (data) => {
           {data.path}
         </a>
       </div>
-      <div class="navbar-center">
-        <p>{data.center}</p>
-      </div>
       <div className="navbar-end">
-      <Link to="/Information" className="btn btn-ghost">
+        <Link to="/Information" className="btn btn-ghost">
           Information
         </Link>
         <Link to="/Changelog" className="btn btn-ghost">

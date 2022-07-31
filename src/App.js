@@ -1,11 +1,10 @@
 import "./App.css";
-import HomePage from "./Pages/Homepage";
-import NavBar from "./Pages/NavBar";
-import Information from "./Pages/Information";
-import ERR from "./Pages/ERR";
-import ChangeLog from "./Pages/ChangeLog";
+import HomePage from "./Components/Homepage";
+import NavBar from "./Components/NavBar";
+import Information from "./Components/Information";
+import ERR from "./Components/ERR";
+import ChangeLog from "./Components/ChangeLog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -32,7 +31,7 @@ function App() {
             path="/Information"
             element={
               <>
-                <NavBar path="Home" center="Information"/>
+                <NavBar path="Home" changeLogHidden />
                 <Information />
               </>
             }
@@ -41,7 +40,7 @@ function App() {
             path="/Changelog"
             element={
               <>
-                <NavBar path="Home" center="Changelog"/>
+                <NavBar path="Home" infoHidden />
                 <ChangeLog />
               </>
             }
