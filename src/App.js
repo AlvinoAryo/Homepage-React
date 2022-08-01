@@ -3,9 +3,9 @@ import HomePage from "./Components/Homepage";
 import NavBar from "./Components/NavBar";
 import Information from "./Components/Information";
 import ERR from "./Components/ERR";
+import Cuyuniv from "./Components/Cuyuniv";
 import ChangeLog from "./Components/ChangeLog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { windowMockupColors } from "react-daisyui/dist/WindowMockup/WindowMockup";
 
 function App() {
   return (
@@ -48,10 +48,10 @@ function App() {
           />
           <Route
             exact
-            path="/CuyUniversity/SESI4"
+            path="/CuyUniversity/SESI5"
             element={
               <>
-                {window.location.href = 'https://SESI-4-CUYUNIVERSITY.afrizaldea.repl.co'}
+                <Cuyuniv />
               </>
             }
           />
