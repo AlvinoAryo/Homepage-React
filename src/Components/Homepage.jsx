@@ -2,7 +2,7 @@ const HomePage = () => {
   const defaultClass = "text-rose-600 hover:bg-rose-700 hover:text-rose-50 transition duration-300 ease-in-out";
   
   return (
-    <div className="font-bold m-2 p-4">
+    <div className="font-bold m-2 p-4" data-aos="zoom-in">
       <div className="hero">
         <div className="hero-content text-center">
           <div className="max-w-md">

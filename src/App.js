@@ -3,17 +3,21 @@ import HomePage from "./Components/Homepage";
 import NavBar from "./Components/NavBar";
 import Information from "./Components/Information";
 import ERR from "./Components/ERR";
-import Cuyuniv from "./Components/Cuyuniv";
+import Cuyuniversity from "./Components/Cuyuniversity";
 import ChangeLog from "./Components/ChangeLog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen text-gray-50">
-        {/* <div>
-          <NavBar title="Home" path="/" />
-        </div> */}
+        <div>
+          <NavBar />
+        </div>
         {/* <div className="font-bold m-2 p-4">
           <HomePage />
         </div> */}
@@ -23,7 +27,6 @@ function App() {
             path="/"
             element={
               <>
-                <NavBar path="/" />
                 <HomePage />
               </>
             }
@@ -32,7 +35,6 @@ function App() {
             path="/Information"
             element={
               <>
-                <NavBar path="Home" changeLogHidden />
                 <Information />
               </>
             }
@@ -41,17 +43,16 @@ function App() {
             path="/Changelog"
             element={
               <>
-                <NavBar path="Home" infoHidden />
                 <ChangeLog />
               </>
             }
           />
           <Route
             exact
-            path="/CuyUniversity/SESI5"
+            path="/CuyUniversity/"
             element={
               <>
-                <Cuyuniv />
+                <Cuyuniversity />
               </>
             }
           />
