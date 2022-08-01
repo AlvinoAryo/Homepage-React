@@ -5,6 +5,7 @@ import Information from "./Components/Information";
 import ERR from "./Components/ERR";
 import ChangeLog from "./Components/ChangeLog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { windowMockupColors } from "react-daisyui/dist/WindowMockup/WindowMockup";
 
 function App() {
   return (
@@ -42,6 +43,15 @@ function App() {
               <>
                 <NavBar path="Home" infoHidden />
                 <ChangeLog />
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/CuyUniversity/SESI4"
+            element={
+              <>
+                {window.location.href = 'https://SESI-4-CUYUNIVERSITY.afrizaldea.repl.co'}
               </>
             }
           />
