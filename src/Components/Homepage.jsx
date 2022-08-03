@@ -9,7 +9,7 @@ const HomePage = () => {
             <h1 className="text-5xl font-bold">Vino Aryo</h1>
             <span classNameName="co_text">
               (<span className={defaultClass}>&lt;</span>
-              Full Stack Developer <span className={defaultClass}>/&gt;</span>)
+              Developer <span className={defaultClass}>/&gt;</span>)
             </span>
             <p className="py-6">Welcome to my personal website.</p>
             <p className="skills ">
