@@ -8,6 +8,7 @@ import ChangeLog from "./Components/ChangeLog";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Admin from "./Components/Admin";
 
 AOS.init();
 
@@ -44,6 +45,15 @@ function App() {
             element={
               <>
                 <ChangeLog />
+              </>
+            }
+          />
+          <Route
+            exact
+            path="/Admin"
+            element={
+              <>
+                <Admin />
               </>
             }
           />
